@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            font-family: 'Trebuchet MS', 'Helvetica', Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+        fieldset {
+            margin: 1em 0;
+            padding: 1em;
+            border: 1px solid #ccc;
+            background: #f8f8f8;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            cursor: pointer;
+        }
+
+        input[type="text"] {
+            width: 20em;
+        }
+
+        input[type="radio"] {
+            width: auto;
+        }
+
+        textarea {
+            width: 20em;
+            height: 10em;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Detalhes de contato</legend>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" />
+            </div>
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email" />
+            </div>
+
+            <div>
+                <label for="url">URL:</label>
+                <input type="text" name="url" id="url" />
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comentários</legend>
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Lembrar de mim</legend>
+            <div>
+                <label>
+                    <input type="radio" name="lembrar" id="sim">sim</input>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="lembrar" id="nao">não</input>
+                </label>
+            </div>
+        </fieldset>
+    </form>
+    </div>
+</body>
+
+</html>

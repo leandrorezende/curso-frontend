@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        #conteudo {
+            background: #dcdcdc;
+            height: 600px;
+            display: flex;
+
+            /* row|row-reverse|column|column-reverse */
+            /* flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: baseline; */
+        }
+
+        .item {
+            /*width: 200px;*/
+            height: 100px;
+            margin: 10px;
+            background: white;
+            border: 1px solid gray;
+            /* define a proporção de espaço ocupado por um item */
+            flex-grow: 0;
+
+            /* define a proporção de encolhimento por um item */
+            flex-shrink: 0;
+
+            /* indica o tamanho inicial de widthdo flex item antes 
+            da distribuição do espaço restante */
+            flex-basis: 200px;
+        }
+
+        .item1 {
+            /* flex-grow: 1; */
+            flex-shrink: 1;
+        }
+
+        .item2 {
+            /* flex-grow: 2; */
+            flex-shrink: 5;
+        }
+
+        .ordem1 {
+            order: 1;
+        }
+
+        .ordem2 {
+            order: 2;
+        }
+
+        .ordem3 {
+            order: 3;
+        }
+
+        .ordem4 {
+            order: 4;
+        }
+
+        .ordem {
+            order: -2
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+    <div id="conteudo">
+        <div class="item item1">01</div>
+        <div class="item item2">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+    </div>
+</body>
+
+</html>

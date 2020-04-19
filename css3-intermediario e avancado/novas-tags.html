@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            font-family: 'Trebuchet MS', 'Helvetica', Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+        header {
+            border: 1px solid gray;
+            padding: 5px;
+            background: #f2f2f2;
+        }
+
+        nav {
+            border: 1px solid green;
+            background: #f2f2f2;
+            padding: 5px;
+        }
+
+        footer {
+            background: #ccc;
+        }
+
+        article {
+            background: orange;
+            padding: 10px;
+        }
+
+        section {
+            border: 1px dotted #fff;
+        }
+
+        aside {
+            background: blue;
+        }
+
+        #content {
+            background: blueviolet;
+            margin: 15px;
+            padding: 15px;
+        }
+    </style>
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header>
+        <h1>Logo</h1>
+        <span>Meu Site</span>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Contato</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <h3>Novos Cursos</h3>
+        <section>
+            <h4>Cursos</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat turpis in ante fringilla
+                faucibus. Donec vel nulla tincidunt, dapibus tortor auctor, bibendum leo. Curabitur dapibus ultricies
+                sapien eu volutpat. Sed sed mauris in justo egestas auctor non a purus.
+            </p>
+            <span>Atualizado em <time>10/10/2020</time></span>
+        </section>
+    </article>
+
+    <div id="content">
+        <form>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" autofocus /><br /><br />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required /><br /><br />
+
+            <label for="numero">Numero</label>
+            <input type="number" id="numero" min="5" max="20" step="5" required /><br /><br />
+
+            <label for="url">Url</label>
+            <input type="url" id="url" /><br /><br />
+
+            <label for="pesquisa">Pesquisa</label>
+            <input type="search" id="pesquisa" /><br /><br />
+
+            <label for="range">Range</label>
+            <input type="range" id="range" min="1" max="30" value="11" /><br /><br />
+
+            <label for="date">Data</label>
+            <input type="date" id="date" /><br /><br />
+
+            <label for="color">Cor</label>
+            <input type="color" id="color" /><br /><br />
+
+            <input type="submit" name="" value="Enviar" />
+        </form>
+    </div>
+
+    <aside>
+        <h3>Sobre o autor</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat turpis in ante fringilla
+            faucibus. Donec vel nulla tincidunt, dapibus tortor auctor, bibendum leo. Curabitur dapibus ultricies
+            sapien eu volutpat. Sed sed mauris in justo egestas auctor non a purus.
+        </p>
+    </aside>
+
+    <footer>
+        <p>&COPY; 2020 - Seu site</p>
+    </footer>
+</body>
+
+</html>

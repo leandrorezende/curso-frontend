@@ -1,0 +1,58 @@
+
+class container-fluid ocupa todo o espaçamento da tela
+todos os layouts criados em bootstrap ficam dentro de uma div class container ou container-fluid
+e dentro fica a div class row
+para alinhar o conteúdo dentro de uma div margin: 10px auto;
+class para alinhar o conteudo dentro de uma div usando bootstrap ml-auto
+position
+	static: posicionamento padrao dos elementos
+
+	relative: habilita a modificação do posicionamento baseado na posição padrão do elemento
+	.relative{
+		position: relative;
+		top: 20px;
+		left: -80px;
+	}
+	Ao colocar essa class em uma tag <p>, ela o parágrafo vai se movientar no sentido left e top,
+	
+	absolute: o elemento sai do fluxo normal do documento e não afeta os outros elmentos. Logo os
+	os elementos irao se posicionar como se ele não existisse. Com isso ele é capaz de sobrepor outros
+	elementos. A posição absoluta é calculada com base no container(div, ou outra coisa) que o elemento
+	está contido. Caso o container não tenha uma posição definida(relativa, fixa ou absoluta) e vc muda 
+	a posição do elemento ele vai alinhar com o body.
+	Elemento absoluto acompanha a rolagem da página
+	
+	fixed: tem a posição definida em relação a janela do navegador. Muito utilizado para posicionar o chat em um site, menu, etc
+	
+	formatação de texto css
+    text-indent: 40px;
+    line-height: 40px; //usado para centralizar text dentro de span
+	
+normalize - padrozina a formação do html entre todos os browsers, zera as configurações e corrige bugs dos browsers.
+
+tratativa com prefiox são necessárias caso determinada propriedade css não seja capaz de interpretar as proproiedades
+css nas suas formas mais atuais em todos as versões dos navegadores.
+Exemplo com border radius
+-webkit-border-radius: 20px 90px;
+-moz-border-radius: 20px 90px;
+border-radius: 20px 90px;
+
+https://autoprefixer.github.io/ 
+
+A propriedade box-sizing: border-box; retira o padding como parte do width de uma elemento que por ser uma propriedade nova 
+também recomenda o uso dos prefixos 
+
+animações em css, é a possibilidade de a partir de uma formatação ir para uma outra formataçao
+
+<aticle> representa postagem, informações de uma empresa 
+<section> vao dentro do article para separar conteudos dentro dessa tag
+<span>Atualizado em <time>10/10/2020</time></span>
+
+<aside> usado para banner, menu lateral, inforções variadas
+
+layouts fixos são configurados utilizando tamnahos definidos	
+layouts fluidos utilizam % para configurar usas médiads
+Layouts responsivos são os que adpatam ao dipositivo que será exibido, mudando sua distribuição
+
+
+elementos inline-block são diferentes dos inline, pq nos inline-block é possível colocar margin e width
