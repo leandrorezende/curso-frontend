@@ -7,12 +7,36 @@
         #conteudo {
             background: #dcdcdc;
             height: 600px;
-            display: flex;
+            display: flex; /* define os itens em flex itens*/
 
-            /* row|row-reverse|column|column-reverse */
+            /*  
+				row - cada item posicionado da esquerda para direita, organizados todos em linha
+				row-reverse - cada item posicionado da direira para esquerda, organizados todos em linha
+				column - cada item posicionado de cima para baixo, organizados todos em coluna
+				column-reverse - cada item posicionado de baixo para cima, organizados todos em coluna
+			*/
             /* flex-direction: row;
-            flex-wrap: nowrap;
+			/*  
+				no-wrap - o contéudo da div irá se adequar ao tanho da div mae, sem que haja quebra para uma nova linha
+				wrap - o contéudo da div não irá se ajustar ao tanho da div mae, e caso não caiba, esse quebra para uma nova linha
+				wrap-rever - 
+			*/
+            flex-wrap: nowrap; /* define quebras de layout */
+			/*  
+				start - os itens são alinhandos ao canto superior esquerdo da div mae
+				end - os itens são alinhandos ao canto superior direiro da div mae
+				center - os itens são alinhandos no centro da div mae
+				space-between - distribui os itens por toda a div mae, adicionando uma spaçamento igual entre todos os itens 
+				space-around - distribui os itens por toda a div mae, adicionando uma spaçamento igual entre todos os itens e também com as bordas direita e esquerda da div mae
+			*/
             justify-content: space-around;
+			/*  
+				stretch - define que os itens devem preencher toda a área até o fim a da div mae (isso ocorre caso não tenha sido definido height ou width)
+				center - define que os itens deve ficar centralizados tanto na horizontal quanto na vertical 
+				flex-start - define que os itens devem ficar posicionados na parte superior
+				flex-end - define que os itens devem ficar posicionados na parte inferiro 
+				baseline - utiliza a linha base do texto ou conteúdo encontrado nos itens para fazer o alinhamento geral
+			*/
             align-items: baseline; */
         }
 
@@ -34,8 +58,25 @@
         }
 
         .item1 {
+			/* 
+				define proporcao de espaço ocupado por um item
+				grow habita o item a preencher todo o espaço da div mae não ocupado por outro item, não tendo assim um tamanho fixo 
+				o espaço é proporcional ao valor passado (1, 2, 3) considerando tambem a flex-grow dos outros itens
+			*/
             /* flex-grow: 1; */
+			/* 
+				shrink define a capacidade de redução de tamanho de um item quando o tamanho da div mae já não comporta todos os itens
+				no seu tamanho pre configurado, fazendo que que diminuam seu tamanho
+			*/
             flex-shrink: 1;
+			
+			/* 
+				indica o tamanho inicial do flex item antes da distribuição do espaço restante (feito pelo flex-grow ou shrink)
+				auto - define que o tamanho incicial de cada item é automático, que é o que for definido no item ( seu width e heigth )
+				Ex.: flex-basis: auto
+				100px - define que o tamanho incicial de cada item é automático, que é o que for definido no item ( seu width e heigth )
+				Ex.: flex-basis: 100px;
+			*/
         }
 
         .item2 {
